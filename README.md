@@ -89,7 +89,7 @@ import com.jirbo.adcolony.*;
 ```java
 AdColony.configure(this, client_options, app_id, zone_ids);
 ```
-client_optionsをアプリの情報に入れ替えてください (e.g. "version:2.1,store:google" - 詳しくは [[API Details]] に参照してください) 。AdColonyV4VCAdを作成するときに使用したzone_idのV4VCが有効になったことを確認してください。 <br><br>
+client_optionsをアプリの情報に入れ替えてください (e.g. "version:2.1,store:google" - 詳しくは [API Details](https://github.com/AdColony/AdColony-Android-SDK/wiki/API-Details) に参照してください) 。AdColonyV4VCAdを作成するときに使用したzone_idのV4VCが有効になったことを確認してください。 <br><br>
 **Note:** この設定関数は**main Activity's** onCreateメソッドで **一回** 実行してください。 また、アプリケーションが実行する間このAcitivityの参照は消さないようにしてください。
 
 ===
@@ -123,7 +123,7 @@ AdColonyVideoAd ad = new AdColonyVideoAd();
 ad.show();
 ```
 zone_idはAdColony.configureで設定されたIDリスト上の管理画面で取得した有効なIDです。<br><br>
-**Note:** また、これは基本の実装方法です。さらに高度な設定には下記の記述と[[API Details]] を参照してください。
+**Note:** また、これは基本の実装方法です。さらに高度な設定には下記の記述と[API Details](https://github.com/AdColony/AdColony-Android-SDK/wiki/API-Details) を参照してください。
 
 ##Showing V4VC Videos##
 AdColony V4VC (Videos-for-Virtual-Currency)は[[interstitial ads|Showing Interstitial Videos]]の上で実装した動画広告を再生完了した時点で、ユーザに仮想通貨を付与することができるシステムです。AdColony V4VCはユーザの仮想通貨残高を追跡しません。ユーザに仮想通貨を付与すべき時点でアプリケーションに通知する機能を提供しています。<br><br>
@@ -140,7 +140,7 @@ import com.jirbo.adcolony.*;
 AdColony.configure(this, client_options, app_id, zone_ids);
 ```
 
-client_optionsをアプリ情報へ入れ替えてください (e.g. "version:2.1,store:google" - 詳しくは [[API Details]] に参照してください) 。また、app_id/zone_idsを管理画面上から取得して下さい [Control Panel](http://clients.adcolony.com) ( "[Setting up Apps and Zones](http://support.adcolony.com/customer/portal/articles/761987-setting-up-apps-zones)" に参照)。 AdColonyV4VCAdを作成するときに使用したzone_idのV4VCが有効であることを確認してください。 <br><br>
+client_optionsをアプリ情報へ入れ替えてください (e.g. "version:2.1,store:google" - 詳しくは [API Details](https://github.com/AdColony/AdColony-Android-SDK/wiki/API-Details) に参照してください) 。また、app_id/zone_idsを管理画面上から取得して下さい [Control Panel](http://clients.adcolony.com) ( "[Setting up Apps and Zones](http://support.adcolony.com/customer/portal/articles/761987-setting-up-apps-zones)" に参照)。 AdColonyV4VCAdを作成するときに使用したzone_idのV4VCが有効であることを確認してください。 <br><br>
 **Note:** この設定関数は**main Activity's** onCreateメソッドで **一度** 限り実行してください。 アプリケーションが実行する間にこのAcitivityの参照は消さないようにしてください。
 
 ===
@@ -174,7 +174,7 @@ ad.show();
 ```
 
 v4vc_zone_idはAdColony.configureで設定されてるIDリスト中にある管理画面で取得した有効なV4VC枠IDです。<br><br>
-**Note:** これは基本の実装方法です。さらに高度な設定には下記の記述と[[API Details]]を参照してください。
+**Note:** これは基本の実装方法です。さらに高度な設定には下記の記述と[API Details](https://github.com/AdColony/AdColony-Android-SDK/wiki/API-Details)を参照してください。
 
 ===
 ###Advanced Usage###
@@ -343,7 +343,7 @@ import com.jirbo.adcolony.*;
 ```java
 AdColony.configure(this, client_options, app_id, zone_ids);
 ```
-client_optionsをアプリの情報に入れ替えてください (e.g. "version:2.1,store:google" - 詳しくは [[API Details]] に参照してください) 。また、app_id/zone_idsを管理画面上から取得して下さい [Control Panel](http://clients.adcolony.com) ( "[Setting up Apps and Zones](http://support.adcolony.com/customer/portal/articles/761987-setting-up-apps-zones)" に参照). <br><br>
+client_optionsをアプリの情報に入れ替えてください (e.g. "version:2.1,store:google" - 詳しくは [API Details](https://github.com/AdColony/AdColony-Android-SDK/wiki/API-Details) に参照してください) 。また、app_id/zone_idsを管理画面上から取得して下さい [Control Panel](http://clients.adcolony.com) ( "[Setting up Apps and Zones](http://support.adcolony.com/customer/portal/articles/761987-setting-up-apps-zones)" に参照). <br><br>
 **Note:** この設定関数は**main Activity's** onCreateメソッドで **一回** のみ実行してください。 アプリケーションが実行する間にこのAcitivityの参照は廃棄されないようにしてください。
 
 ===
@@ -417,4 +417,4 @@ ad.destroy();
 ```
 上記ではこのオブジェクトへの内部リファランスを消します、そしてGCでメモリーから開放することができます。<br><br>
 
-**Note:** これは最小限で実装した例です, もっと詳しくは[[API Details]]またはサンプルアプリを参照してください。
+**Note:** これは最小限で実装した例です, もっと詳しくは[API Details](https://github.com/AdColony/AdColony-Android-SDK/wiki/API-Details)またはサンプルアプリを参照してください。
