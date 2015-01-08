@@ -127,8 +127,8 @@ zone_idはAdColony.configureで設定されたIDリスト上の管理画面で�
 
 ##Showing V4VC Videos##
 AdColony V4VC (Videos-for-Virtual-Currency)は[[interstitial ads|Showing Interstitial Videos]]の上で実装した動画広告を再生完了した時点で、ユーザに仮想通貨を付与することができるシステムです。AdColony V4VCはユーザの仮想通貨残高を追跡しません。ユーザに仮想通貨を付与すべき時点でアプリケーションに通知する機能を提供しています。<br><br>
-[Basics](Showing-V4VC-Videos#wiki-basics)<br>
-[Advanced Usage](Showing-V4VC-Videos#wiki-advanced-usage)
+[Basics](#wiki-basics)<br>
+[Advanced Usage](#wiki-advanced-usage)
 ###Basics###
 ####Step 1: Adcolonyの設定####
 Adcolonyライブラリをインポートしてください。
@@ -178,9 +178,9 @@ v4vc_zone_idはAdColony.configureで設定されてるIDリスト中にある管
 
 ===
 ###Advanced Usage###
-[AdColonyV4VCListener](Showing-V4VC-Videos#wiki-adcolonyv4vclistener)<br>
-[Pre and Post-Popups](Showing-V4VC-Videos#wiki-pre-and-post-popups)<br>
-[Server-Side Rewards](Showing-V4VC-Videos#wiki-server-side-rewards)
+[AdColonyV4VCListener](#wiki-adcolonyv4vclistener)<br>
+[Pre and Post-Popups](#wiki-pre-and-post-popups)<br>
+[Server-Side Rewards](#wiki-server-side-rewards)
 ####AdColonyV4VCListener####
 V4VC動画を再生した後にAdcolonyからアプリに通知します。一つのAdColonyV4VCListenerはアプリに一度だけ追加してください。また、AdColonyV4VCListenerを継承してAdColony.configureのすぐ後に追加してください。
 ```java
