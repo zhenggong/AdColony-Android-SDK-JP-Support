@@ -16,11 +16,11 @@ https://github.com/AdColony/AdColony-AdobeAIR-SDK
 AdColonyはアプリケーションのあらゆる場所にHD動画広告を配信することができます。動画を再生完了した時点でユーザに仮想通貨を付与するV4VC広告も提供しています。
 
 ###注意###
-* AdColony Android SDKの現在のバージョンは2.1.3です。
+* AdColony Android SDKの現在のバージョンは2.2.0です。
 * 本SDKはAndroid OS 2.3.3(APIレベル10)から動作対象となります。
 * AdColonyの広告配信を行うことができるデバイスの最小メモリ(アプリベース)は32MBです。32MBよりも小さいデバイスは再生することができません。
 * アプリケーションのターゲットがAPI 18以上かつ、ProGuardを有効にしている場合、proguard-project.txtファイルに下記のコード追加してください。 `-dontwarn android.webkit.**`
-* GoogleのAdvertising IDを取得するため、プロジェクトの中にGoogle Play Servicesを追加してください。追加しない場合表示できる広告の数は少なくなります。
+* GoogleのAdvertising IDを取得するため、プロジェクトの中にGoogle Play Services 4.0+ を追加してください。追加しない場合表示できる広告の数は少なくなります。
 * データ収集に関しては以下のページを参照してください。 http://support.adcolony.com/customer/portal/articles/1605954-data-and-clickstream-collection
 
 ***
@@ -34,8 +34,9 @@ AdColonyはアプリケーションのあらゆる場所にHD動画広告を配�
 ##Project Setup##
 下記のステップに従ってAdColony動画広告をプロジェクトに導入してください。
 ####Step 1: SDKファイルの導入####
-* プロジェクトのlibsフォルダ内に、adcolony.jarをコピーします。
-  * adcolony.jarは解凍したSDKファイルの"Library"フォルダ内にあります。
+* プロジェクトのlibsフォルダー内に、adcolony.jarをコピーします。
+* プロジェクトのlibsフォルダー内に、armeabフォルダーをコピーします。
+  * adcolony.jarとはarmeabフォルダー両方は解凍したSDKファイルの"Library"フォルダ内にあります。
 
 ***
 ####Step 2: AndroidManifest.xmlの修正####
@@ -43,7 +44,8 @@ AdColonyはアプリケーションのあらゆる場所にHD動画広告を配�
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.VIBRATE" /> 
 ```
 Dynamic End Cardのパフォーマンスを最適化するために、下記のようにハードウェアアクセラレーションを有効にしてください。
 ```xml
