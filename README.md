@@ -234,6 +234,19 @@ Adcolonyはサーバー側がなくてもクライアント側のみ仮想通貨
 ```
 [http://www .yourserver.com/anypath/callback_url.php]?id=[ID]&uid=[USER_ID]&zone=[ZONE_ID]&amount=[CURRENCY_AMOUNT]&currency=[CURRENCY_TYPE]&verifier=[HASH]&open_udid=[OPEN_UDID]&udid=[UDID]&odin1=[ODIN1]&mac_sha1=[MAC_SHA1]
 ```
+URL Parameter | Type | Purpose
+--- | --- | ---
+id | Positive long integer | Unique V4VC transaction ID
+uid | String | AdColony device ID
+amount | Positive integer | Amount of currency to reward
+currency | String | Name of currency to reward
+open_udid | String | OpenUDID
+udid | String | Apple UDID
+odin1 | String | Open Device Identification Number (ODIN)
+mac_sha1 | String | SHA-1 hash of lowercase colon-separated MAC address
+custom_id | String | Custom user ID
+verifier | String | MD5 hash for message security
+
 Androidの場合open_udid, udid, odin1, and mac_sha1は常に空です。 アプリからカスタマイズIDを渡したい場合、zoneのコールバックURLの後ろに“&custom_id=[CUSTOM_ID]”をつけてください。このIDも文字(verifier)の最後に追加してチェックしてください。<br><br>
 
 コールバックの実装は、MD5がサポートしている言語であるならば、PHPにかぎらず言語の指定はありません。<br><br>
