@@ -319,7 +319,7 @@ CREATE TABLE `AdColony_Transactions` (
 `name` enum('Currency Name 1') default NULL, `user_id` int(11) default NULL,
 `time` timestamp NULL default NULL,
 PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+);
 ```
 重複付与しないために、トラザクションidを必ず保存してください。毎回コールバックURLが呼ばれる時にトラザクションIDが重複してるかどうかをチェックしてください。既に処理された場合、再度ユーザへ付与する必要はなくレスポンスが成功した場合と同様の対応を行って下さい<br><br>
 重複チェックの後にユーザに指定したタイプ＆数量の仮想通貨を付与してください。
