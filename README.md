@@ -16,8 +16,8 @@ https://github.com/AdColony/AdColony-AdobeAIR-SDK
 AdColonyはアプリケーションのあらゆる場所にHD動画広告を配信することができます。動画を再生完了した時点でユーザに仮想通貨を付与するV4VC広告も提供しています。
 
 ###注意###
-* AdColony Android SDKの現在のバージョンは2.2.0です。
-* 本SDKはAndroid OS 2.3.3(APIレベル10)から動作対象となります。
+* AdColony Android SDKの現在のバージョンは2.3.4です。
+* 本SDKはAndroid OS 4.0(APIレベル14)から動作対象となります。
 * AdColonyの広告配信を行うことができるデバイスの最小メモリ(アプリベース)は32MBです。32MBよりも小さいデバイスは再生することができません。
 * アプリケーションのターゲットがAPI 18以上かつ、ProGuardを有効にしている場合、proguard-project.txtファイルに下記のコード追加してください。 `-dontwarn android.webkit.**`
 * GoogleのAdvertising IDを取得するため、プロジェクトの中にGoogle Play Services 4.0+ を追加してください。追加しない場合表示できる広告の数は少なくなります。
