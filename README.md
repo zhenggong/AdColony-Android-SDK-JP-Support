@@ -102,7 +102,7 @@ client_optionsをアプリの情報に入れ替えてください (e.g. "version
 ===
 ####Step 2: PauseとResumeの設定####
 ~~アプリ中で全てのActivityのadcolonyメソッドを呼び出すために、下記のようにonPause / onResumeでオーバーライドしてください。~~  
-SDK2.3.4からPauseとResumeは非推奨となっており、下記のようにオバーライドしなくても問題なく動作されるので、Stepの操作は不要になります。
+バージョン2.3.4からAdcplony.pause()とAdcolony.resume()は非推奨となっており、下記のようにオバーライドしなくても問題なく動作されるので、Step2の操作は不要になります。
 ```java
 public void onPause() 
 {
@@ -154,7 +154,7 @@ client_optionsをアプリ情報へ入れ替えてください (e.g. "version:2.
 ===
 ####Step 2: PauseとResumeの設定####
 ~~アプリ中で全てのActivityのadcolonyメソッドを呼び出すために、下記のようにonPause / onResumeでオーバーライドしてください。~~  
-SDK2.3.4からPauseとResumeは非推奨となっており、下記のようにオバーライドしなくても問題なく動作されるので、Stepの操作は不要になります。
+バージョン2.3.4からAdcplony.pause()とAdcolony.resume()は非推奨となっており、下記のようにオバーライドしなくても問題なく動作されるので、Step2の操作は不要になります。
 ```java
 public void onPause() 
 {
@@ -371,7 +371,7 @@ client_optionsをアプリの情報に入れ替えてください (e.g. "version
 ===
 ####Step 2: Pause and Resume####
 ~~アプリ中で全てのActivityのadcolonyメソッドを呼び出すために、下記のようにonPause / onResumeでオーバーライドしてください。~~  
-SDK2.3.4からPauseとResumeは非推奨となっており、下記のようにオバーライドしなくても問題なく動作されるので、Stepの操作は不要になります。
+バージョン2.3.4からAdcplony.pause()とAdcolony.resume()は非推奨となっており、下記のようにオバーライドしなくても問題なく動作されるので、Step2の操作は不要になります。
 ```java
 public void onPause() 
 {
