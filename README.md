@@ -46,6 +46,11 @@ AdColonyはアプリケーションのあらゆる場所にHD動画広告を配�
 ***
 ####Step 2: AndroidManifest.xmlの修正####
 "AndroidManifest.xml"に下記のパーミッションが追加されているのを確認してください。
+1. INTERNET
+2. ACCESS_NETWORK_STATE
+3. WRITE_EXTERNAL_STORAGE (optional)
+4. VIBRATE (optional)
+5. ACCESS_FINE_LOCATION (optional)
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
