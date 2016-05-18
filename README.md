@@ -56,6 +56,7 @@ AdColonyはアプリケーションのあらゆる場所にHD動画広告を配�
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 <uses-permission android:name="android.permission.VIBRATE" /> 
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> 
 ```
 Dynamic End Cardのパフォーマンスを最適化するために、下記のようにハードウェアアクセラレーションを有効にしてください。
 ```xml
